@@ -1,4 +1,4 @@
-1일차 <p>
+<h1>1일차</h1> <p>
 목차번호로 리스트 항목 나열하기 <br>
 <table>
 ol << 부모태그 <br>
@@ -13,7 +13,7 @@ p style=”margin-top:20px;” << 엔터키 2칸 원하는 단락을 margin styl
 <p>a href=”링크” target=”_blank” title=”링크에 마우스를 가져가면 설명”</p>
 링크를 참조하는 태그 여기서 target=”_blank”는 새탭에서 띄우기 기능임
 </p>
-2일차 <p>
+  <h1>2일차</h1> <p>
 <p>html 에서 여러개의 아이디명을 그룹화해서 일괄변경을 원하는 경우
 class 를 사용 .className</p>
 <p>단일의 아이디를 부여해서 식별하기 위하는 경우
