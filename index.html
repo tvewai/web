@@ -4,16 +4,62 @@
     <meta charset="utf-8">
     <title>Web train- html</title>
   </head>
-  <body>
-    <h1><a href="index.html" target="_blank" title="제가 누군지 알아보세요!" >자기소개</a></h1>
-    <ol>
-      <li><a href="2022-02-07.html" target="_blank" title="클릭시 1일차 연습과정으로 이동합니다.">1일차 HMTL 연습</a></li>
-      <li><a href="2022-02-08.html" target="_blank" title="클릭시 2일차 연습과정으로 이동합니다.">2일차 HMTL 연습</a></li>
-      <li><a href="2022-02-09.html" target="_blank" title="클릭시 3일차 연습과정으로 이동합니다.">3일차 HMTL 연습</a></li>
-    </ol>
-    <h2>HTML 공부를 합시다!</h2>
-    <p style="margin-top =20px;">
-      왜 HTML을 공부해야할까???
+  <style>
+    body{
+      margin: 0px;
 
+    }
+
+    a{  
+      color: black;
+      text-decoration:none; /*URL 밑줄 없애기*/
+    }
+    a:hover{
+      cursor: pointer; /* 마우스오버 손모양 */
+      color: blue;
+      text-decoration: underline;
+    }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr; /* 부모그리드 안에 자식들을 나열 */
+    }
+    #grid ul {
+      border-right: 1px solid gray;
+      width: 150px;
+      margin: 0px;
+      padding: 20px;
+    }
+
+    #myself{
+      font-size: 40px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0px;
+      padding: 20px;
+    }
+    #word{
+      padding-left: 70px;
+    }
+
+
+  </style>
+  <body>
+
+    <h1 id="myself"><a href="Profile.html" target="_blank" title="제가 누군지 알아보세요!" >자기소개</a></h1>
+    <div id="grid"> <!-- 부모 -->
+    <ul id="link">
+      <li><a href="2022-02-07.html">1일차 HMTL 연습</a></li>
+      <li><a href="2022-02-08.html">2일차 CSS 연습</a></li>
+      <li><a href="2022-02-09.html">3일차 HMTL 연습</a></li>
+    </ul>
+
+      <div id="word"> <!-- 자식 -->
+      <h2>HTML 공부를 합시다!</h2>
+      <p style="margin-top =20px;" padding: 20px;>
+        왜 HTML을 공부해야할까???
+      </div>
+
+    </div>
   </body>
 </html>
