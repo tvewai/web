@@ -1,28 +1,37 @@
-  function nightDayHnadler(e){
-    var target = document.querySelector('body');
-    if(e.value=='야간모드 변경')
-    {
-      target.style.background = 'black'
-      target.style.color = 'white'
-      e.value = '주간모드 변경';
-
-      var alist = document.querySelectorAll('a');
-      var i=0;
-      while(i<alist.length){
-        alist[i].style.color = 'green';
-        i= i + 1;
-      }
-
-    } else {
-      target.style.background = 'white'
-      target.style.color = 'black'
-      e.value = '야간모드 변경';
-
-      var alist = document.querySelectorAll('a');
-      var i=0;
-      while(i<alist.length){
-        alist[i].style.color = 'red';
-        i= i + 1;
-      }
+    var Link={
+    LinkColor:function(color) {
+            var alist = document.querySelectorAll('a');
+            var i=0;
+            while(i<alist.length){
+              alist[i].style.color = color;
+              i= i + 1;
+            }
+          }
     }
-  }
+    var Body={
+    bodyColor:function(color) {
+            document.querySelector('body').style.color= color;
+    },
+    backColor:function(color) {
+            document.querySelector('body').style.backgroundColor= color;
+          }
+      }
+
+      function nightDayHnadler(self){
+        var target = document.querySelector('body');
+        if(self.value=='야간모드 변경')
+        {
+          Body.backColor('black');
+          Body.bodyColor('white');
+          Link.LinkColor('gray');
+          self.value = '주간모드 변경';
+        } else {
+          Body.backColor('white');
+          Body.bodyColor('black');
+          Link.LinkColor('red');
+          self.value = '야간모드 변경';
+        }
+      }
+
+
+// body객체와 link객체로 구분하여 메소드로 함수를 지정하였음.
