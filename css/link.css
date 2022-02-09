@@ -1,0 +1,53 @@
+
+    body{margin: 0px;}
+
+    a{
+      text-decoration:none; /*URL 밑줄 없애기*/
+    }
+    a:hover{
+      cursor: pointer; /* 마우스오버 손모양 */
+
+      text-decoration: underline;
+    }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr; /* 부모그리드 안에 자식들을 나열 */
+    }
+    #grid ul {
+      border-right: 1px solid gray;
+      width: 150px;
+      margin: 0px;
+      padding: 20px;
+    }
+
+    #myself{
+      font-size: 40px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0px;
+      padding: 20px;
+    }
+    #word{
+      padding-left: 70px;
+    }
+    #night_day{
+      margin: 0px;
+    }
+
+    @media(max-width: 800px)
+    /* 화면크기가 800px보다 작으면 "display none" 출력하지 않는다. */
+    {
+    #grid{
+      display: block;
+        }
+    #grid ul{
+        border-right: none;
+    }
+    #myself{
+        border-bottom: none;
+    }
+    }
+
+
+
