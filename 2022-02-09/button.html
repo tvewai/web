@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>자바스크립트 실습</h1>
+    <h2>버튼을 누르면 색상이 바뀝니다.</h2>
+    <input type="button" value="야간모드 변경" onclick="nightDayHnadler(this);">
+    <a href="1.html">일번링크</a>
+    <a href="2.html">일번링크</a>
+    <a href="2022-2-9.html">일번링크</a>
+
+    <script type="text/javascript">
+      function nightDayHnadler(e){
+        var target = document.querySelector('body');
+        if(e.value=='야간모드 변경')
+        {
+          target.style.background = 'black'
+          target.style.color = 'white'
+          e.value = '주간모드 변경';
+
+          var alist = document.querySelectorAll('a');
+          var i=0;
+          while(i<alist.length){
+            alist[i].style.color = 'green';
+            i= i + 1;
+          }
+
+        } else {
+          target.style.background = 'white'
+          target.style.color = 'black'
+          e.value = '야간모드 변경';
+
+          var alist = document.querySelectorAll('a');
+          var i=0;
+          while(i<alist.length){
+            alist[i].style.color = 'red';
+            i= i + 1;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
+
+
+<!-- 버튼 예제 실습
+HTML 검사 > Console기능
+
+document.querySelectorAll('찾을 태그나 ID 및 Class명')
+입력하면 태그와 연결된 ID나 Class명이 함께 출력되 검색이 가능하다.
+
+onclick 이벤트를 nightDayHnadler()함수를 이용해서 버튼이벤트를 간결하게 호출
+this로 onclick을 지정 함수내에서 onclick을 가르킨 인자 E의 value값을 변경 결국은
+
+onclick <(this) E 인 셈 . -->
