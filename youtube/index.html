@@ -8,35 +8,84 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="container">
+    <section id="main" class="container">
         <div id="menu"  class="item">
+            
+            <nav>
+            <h1>Introduce</h1>
+            <h2>#Tvewai</h2>
+            </nav>
             <ul class="inner">
-              <li><a href="" class="bar">Home</a></li>
-              <li><a href="" class="bar">Profile</a></li>
-              <li><a href="" class="bar">About</a></li>
+              <li><a href="#main" class="bar">Home</a></li>
+              <li><a href="#profile" class="bar">Profile</a></li>
+              <li><a href="#pro" class="bar">About</a></li>
               <li><a href="" class="bar">Contract</a></li> 
             </ul>        
         </div>
+        <div class="main"></div>
         <div id="header"  class="item">
-            <div class="inner">
-                헤더영역
+
+        <!-- 프로필부분     -->
+            <div id="profile" class="inner1">
+               <div id="face-container"> 
+               <div id="face"></div>
+                </div>
+                <ul class="introduce">
+                    <h1>Profile</h1><br>
+                    <li><h3>Name</h3>김개발</li>
+                    <li><h3>BirthDay</h3>1997.07.29</li>
+                    <li><h3>E-mail</h3>12345@naver.com</li>
+                    <li><h3>Phone</h3>010-1234-5678</li>
+                    <li><h3>Address</h3>서울특별시 강남구 논현동</li>
+
+                </ul>
+                
             </div>
 
         </div>
-       
+        <!-- 프로필 부분 끝 -->
 
-        <div id="content"  class="item">
-            <div class="inner">
-                헤더영역
+        <!-- 포트폴리오부분 -->
+
+        <div id="middle" class="item">
+            <div id="pro" class="inner1">
+              
+                <header>
+                    <h1>Portfolio</h1>
+                </header>
+                <div id="pro-menu">     
+                    <ul>
+                        <li><a href="" class="pro_li">포폴1</a></li>
+                        <li><a href="" class="pro_li">포폴2</a></li>
+                        <li><a href="" class="pro_li">포폴3</a></li>
+                        <li><a href="" class="pro_li">포폴4</a></li>
+                    </ul>
+                </div>
+                <article id="folio"> 
+                    <div class="afolio" id="folio-1">
+                        <div class="info-area">
+                        <span class="info"></span>
+                        <span class="button">
+                            <div class="linkbutton"><input type="button" value="Git바로가기" onclick="" ></div>
+                           
+                        </span>
+                        </div>
+                        <span class="img"></span>
+                    </div>
+                    <div class="afolio." id="folio-2"></div>
+                    <div class="afolio." id="folio-3"></div>
+                    <div class="afolio." id="folio-4"></div>
+                </article>
+                </div>
             </div>
-        </div>
-
+        <!-- 포트폴리오부분 끝 -->
 
         <div id="footer"  class="item">
-            <div class="inner">
+            <div class="inner1">
                 헤더영역
             </div>
         </div>
       </section>
+      </div>
 </body>
 </html>
